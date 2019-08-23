@@ -1,6 +1,7 @@
 import {createSelector} from 'reselect';
 
-const GetPostsState = state => state.posts;
+export const GetPostsState = state => state.posts;
+
 
 export const GetPostsListSelector = createSelector(
     [GetPostsState],
