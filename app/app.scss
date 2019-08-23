@@ -1,0 +1,33 @@
+@import './assets/custom';
+
+.post-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    & .post-container {
+        width: 50%;
+        & form {
+            width: 100%
+        }
+    }
+}
+
+.post-form {
+    & input {
+        width: 70%;
+    }
+
+    & textarea {
+        width: 70%;
+        display: block;
+    }
+}
+
+.post-list {
+    & h3 {
+        width: 100%;
+        margin: 5px;
+    }
+}

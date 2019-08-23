@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>CSGI Challenge</h1>
+    <div class="post-container">
+        <div class="post-container post-form">
+            <form novalidate ng-submit="$ctrl.handlerAddPost()">
+                <label for="title">Title</label> 
+                <input id="title" type="text" submit-required="true" ng-model="title" ng-change="$ctrl.handleInputTilte()">
+                <textarea name="" id="" cols="30" rows="10" ng-model="body" ng-change="$ctrl.handlerTextArea()"></textarea>
+                <button >Add Post</button>
+            </form>
+            <button ng-click="$ctrl.saveList()">Save List</button>
+            <span ng-if="$ctrl.state.isFetching" class="animate-if">loading</span>
+        </div>
+        
+        <div class="post-container">
+            <div class="post-list">
+                <h3>List of Posts</h3>
+                <button class="btn btn-primary" type="button" ng-click="$ctrl.retrievePosts()">Retrieve Posts</button>
+                <ul>
+                    <li ng-repeat="post in $ctrl.state.postsList track by post.id">{{post.title}}</li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
