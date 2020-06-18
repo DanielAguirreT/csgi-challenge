@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.20",
-    "angular": "^1.7.3",
+    "angular": "^1.8.0",
     "babel-polyfill": "^6.26.0",
     "ng-redux": "^4.1.0-alpha",
     "redux": "^4.0.0",
